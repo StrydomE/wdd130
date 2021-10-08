@@ -1,0 +1,60 @@
+body {
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+
+header,
+footer {
+  margin: 0 auto;
+  border: 1px solid #0d0808;
+  padding: 0.5rem;
+  background-color: #19484a;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  margin: 1rem auto;
+  background-color: #a5d6d9;
+  padding: 1rem;
+}
+
+ul li {
+  float: left;
+  display: block;
+  padding: 8px;
+}
+
+a {
+  color: #a5d6d9;
+}
+
+h1 {
+  color: #0d0808;
+  font-size: 2.2rem;
+}
+
+/* Class Selectors */
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-img {
+  width: 925px;
+  height: auto;
+}
