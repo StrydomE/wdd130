@@ -21,6 +21,8 @@ header h1 {
 }
 
 main {
+  display: grid;
+  justify-items: center;
   margin: 1rem auto;
   padding: 1rem;
   border: 1px solid #0d0808;
@@ -34,7 +36,7 @@ main h2 {
 }
 
 img {
-  width: 65px;
+  width: 100px;
   height: auto;
 }
 
@@ -50,6 +52,34 @@ footer {
 /* Class Selectors */
 
 .page {
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto;
+}
+
+.map {
+  grid-column: 2/3;
+}
+
+.logo {
+  grid-column: 3/4;
+}
+
+.purpose {
+  grid-column: 1/4;
+}
+
+.content {
+  grid-column: 1/4;
+}
+
+.audience {
+  grid-column: 1/4;
+}
+
+.color {
+  grid-column: 1/4;
+}
+
+.typography {
+  grid-column: 1/4;
 }
