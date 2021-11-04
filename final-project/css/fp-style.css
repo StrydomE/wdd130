@@ -64,22 +64,6 @@ footer {
   grid-column: 3/4;
 }
 
-.purpose {
-  grid-column: 1/4;
-}
-
 .content {
-  grid-column: 1/4;
-}
-
-.audience {
-  grid-column: 1/4;
-}
-
-.color {
-  grid-column: 1/4;
-}
-
-.typography {
   grid-column: 1/4;
 }
