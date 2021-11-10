@@ -67,3 +67,8 @@ footer {
 .content {
   grid-column: 1/4;
 }
+
+.wireframe {
+  width: 700px;
+  grid-column: 1/4;
+}
