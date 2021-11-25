@@ -53,7 +53,6 @@ button {
 }
 
 button:hover {
-  width: 150px;
-  height: 25px;
   cursor: pointer;
+  background-color: #5a716a;
 }
