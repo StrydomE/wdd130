@@ -1,0 +1,34 @@
+header {
+  margin: 0 auto;
+  padding: 0.5rem;
+  border: 1px solid #0d0808;
+  background-color: #f19a3e;
+  font-family: "Sanchez", serif;
+}
+
+main {
+  display: grid;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid #0d0808;
+  background-color: #98d9c2;
+  font-family: "Baloo Bhaina 2", cursive;
+}
+
+main img {
+  width: 500px;
+  height: auto;
+}
+
+footer {
+  margin: 0 auto;
+  padding: 0.5rem;
+  border: 1px solid #0d0808;
+  background-color: #f19a3e;
+  font-family: "Sanchez", serif;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
