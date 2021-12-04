@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Sanchez&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/media-card.css">
+    <title>Media Card</title>
+  </head>
+  <body>
+      <div class="card">
+          <div class="temple">
+              <img src="images/temple.jpg" alt="Photo of a future temple of The Church of Jesus Christ of Latter-Day Saints yet to be built in India.">
+          </div>
+          <div class="heart">
+            🤍
+          </div>
+          <div class="content">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga nostrum obcaecati nihil recusandae mollitia magnam sequi amet culpa voluptatum? Quisquam, odio earum doloremque blanditiis cumque dignissimos dolore minima amet qui.</p>
+          </div>
+      </div>
+  </body>
+</html>

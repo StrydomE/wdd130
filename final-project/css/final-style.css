@@ -1,4 +1,6 @@
 header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
   margin: 0 auto;
   padding: 0.5rem;
   border: 1px solid #0d0808;
@@ -31,4 +33,12 @@ footer {
 .logo {
   width: 100px;
   height: auto;
+}
+
+.left {
+  grid-column: 1/2;
+}
+
+.right {
+  grid-column: 2/3;
 }
