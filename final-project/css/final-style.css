@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
@@ -17,11 +23,6 @@ main {
   font-family: "Baloo Bhaina 2", cursive;
 }
 
-main img {
-  width: 500px;
-  height: auto;
-}
-
 footer {
   margin: 0 auto;
   padding: 0.5rem;
@@ -30,15 +31,89 @@ footer {
   font-family: "Sanchez", serif;
 }
 
+.page {
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+}
+
 .logo {
   width: 100px;
-  height: auto;
+  margin: 0.2rem;
+}
+
+.hero img {
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #000000;
+}
+
+.button {
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  top: 500px;
+  right: 550px;
+  background-color: #98d9c2;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.button h3 {
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.5rem;
+  color: #000000;
+}
+
+.button:hover {
+  background-color: #f19a3e;
+}
+
+.pets {
+  display: grid;
+}
+
+.pets img {
+  border-radius: 360px;
+  box-shadow: 0 0 10px #000000;
+}
+
+.dog1,
+.lizard {
+  grid-column: 1/2;
+}
+
+.cat1,
+.dog2 {
+  grid-column: 2/3;
+}
+
+.bird,
+.fish {
+  grid-column: 3/4;
+}
+
+.rabbit,
+.cat2 {
+  grid-column: 4/5;
 }
 
 .left {
   grid-column: 1/2;
 }
 
+.left img {
+  border-radius: 15px;
+  box-shadow: 0 0 20px #000000;
+}
+
 .right {
   grid-column: 2/3;
+}
+
+.right img {
+  border-radius: 15px;
+  box-shadow: 0 0 20px #000000;
 }
