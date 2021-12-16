@@ -6,12 +6,36 @@
 
 header {
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-columns: 150px 0.5fr 1fr;
   margin: 0 auto;
   padding: 0.5rem;
   border: 1px solid #0d0808;
   background-color: #f19a3e;
   font-family: "Sanchez", serif;
+  align-items: center;
+  line-height: normal;
+  text-decoration: none;
+}
+
+h1 {
+  color: #000000;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav a {
+  display: block;
+  width: 170px;
+  height: 30px;
+  padding: 1rem;
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
 }
 
 main {
@@ -21,6 +45,7 @@ main {
   border: 1px solid #0d0808;
   background-color: #98d9c2;
   font-family: "Baloo Bhaina 2", cursive;
+  text-align: center;
 }
 
 footer {
@@ -29,6 +54,9 @@ footer {
   border: 1px solid #0d0808;
   background-color: #f19a3e;
   font-family: "Sanchez", serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  align-items: center;
 }
 
 .page {
@@ -42,19 +70,49 @@ footer {
   margin: 0.2rem;
 }
 
+.nav {
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+  justify-content: space-evenly;
+  line-height: 0;
+  margin: 0;
+  padding: 1rem;
+}
+
+.nav a:hover {
+  color: #000000;
+  background-color: #98d9c2;
+}
+
+.welcome {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+.welcome h2 {
+  font-size: 40px;
+}
+
+.hero {
+  grid-column: 1/4;
+  grid-row: 2/3;
+}
+
 .hero img {
   width: 100%;
   position: relative;
   border-radius: 15px;
   box-shadow: 0 0 20px #000000;
+  margin-top: 1rem;
 }
 
 .button {
-  width: 250px;
+  width: 968px;
   height: 100px;
   position: absolute;
-  top: 500px;
-  right: 550px;
+  top: 580px;
+  right: 190px;
   background-color: #98d9c2;
   text-align: center;
   opacity: 0.8;
@@ -71,13 +129,97 @@ footer {
   background-color: #f19a3e;
 }
 
+.test-1 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin: 0.5rem;
+}
+
+.test-1 h4,
+.test-2 h4 {
+  font-size: 25px;
+}
+
+.form {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin: 1rem;
+  width: 320px;
+  padding: 1em;
+  border: 1px solid #5a716a;
+  border-radius: 1em;
+  background-color: #f19a3e;
+}
+
+.form h4 {
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.form ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form li + li {
+  margin-top: 1em;
+}
+
+.form label {
+  display: inline-block;
+  width: 75px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.form input,
+.form textarea {
+  padding: 10px;
+  font: 1em sans-serif;
+  width: 180px;
+  box-sizing: border-box;
+  border: 1px solid #5a716a;
+  border-radius: 10px;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: #5a716a;
+}
+
+.form textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+.submit button {
+  padding: 0.5rem;
+}
+
+.submit button:hover {
+  cursor: pointer;
+}
+
+.test-2 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  margin: 0.5rem;
+}
+
 .pets {
   display: grid;
+}
+
+.pets p {
+  margin: 0.5rem;
 }
 
 .pets img {
   border-radius: 360px;
   box-shadow: 0 0 10px #000000;
+  margin: 0.5rem;
 }
 
 .dog1,
@@ -100,13 +242,42 @@ footer {
   grid-column: 4/5;
 }
 
+.banner-1 {
+  width: 965px;
+  height: 100px;
+  background-color: #f19a3e;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 40px;
+  border: #000000;
+  border-radius: 20px;
+}
+
+.banner-2 {
+  width: 965px;
+  height: 100px;
+  background-color: #f19a3e;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 40px;
+  grid-column: 1/3;
+  border: #000000;
+  border-radius: 20px;
+}
+
 .left {
   grid-column: 1/2;
+}
+
+.left p,
+.right p {
+  margin: 1rem;
 }
 
 .left img {
   border-radius: 15px;
   box-shadow: 0 0 20px #000000;
+  margin: 1rem;
 }
 
 .right {
@@ -116,4 +287,21 @@ footer {
 .right img {
   border-radius: 15px;
   box-shadow: 0 0 20px #000000;
+  margin: 1rem;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.social img {
+  width: 40px;
+  height: auto;
+  margin: 0.3rem;
+}
+
+.social img:hover {
+  transform: scale(1.2);
 }

@@ -19,7 +19,7 @@
             </a>
             <h1>Lucky Whiskers</h1>
             <nav>
-                <ul>
+                <ul class="nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="adopt-a-pet.html">Adopt A Pet</a></li>
                     <li><a href="about-us.html">About Us</a></li>
@@ -27,9 +27,9 @@
             </nav>
         </header>
         <main>
-            <div>
+            <div class="welcome">
                 <h2>Welcome!</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda iure vero quaerat harum accusantium repellendus voluptate? Incidunt aspernatur, iusto corrupti illum veritatis quo ut a, recusandae doloribus dolorem repellat!</p>
+                <p>There are hundreds of animals out there searching for a home and a family to love them. We offer the unique service of pairing these animals with people who will love them and care for them. If you feel you are one of these people, feel free to browse our selection of animals searching for a new home. If you find one you like, you may adopt it through our services, providing a new home for a wonderful animal.</p>
             </div>
             <div class="hero">
                 <img src="images/hero-image.jpg" alt="Photo of a cat playing with a dog">
@@ -39,21 +39,45 @@
                     </section>
                 </a>
             </div>
-            <div>
+            <div class="test-1">
                 <h4>Testimonial</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque consectetur, excepturi architecto laboriosam, repellat possimus vero sapiente repudiandae at doloremque, voluptates rerum natus porro blanditiis nobis odio. Excepturi, quam?</p>
+                <p>While I was in isolation due to the COVID-19 pandemic, I was extremely lonely. Thanks to the wonderful people at Lucky Whiskers, I was able to adopt my new best friend Callie, who has been a helpful companion during these difficult times. Thank you Lucky Whiskers! - Amy Higgins, Texas</p>
             </div>
-            <div>
-                <h4>Information</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae illum ad nisi accusantium facere error sunt placeat hic voluptas enim. Sequi nobis atque quas labore dolores consequuntur earum in deserunt?</p>
+            <div class="form">
+                <form action="index.html" method="get">
+                    <h4>Comment Below!</h4>
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" placeholder="Example: John Doe." name="user_name">
+                        </li>
+                        <li>
+                            <label for="mail">E-mail:</label>
+                            <input type="email" id="mail" placeholder="example@gmail.com" name="user_email">
+                        </li>
+                        <li>
+                            <label for="msg">Message:</label>
+                            <textarea id="msg" placeholder="Type here:"></textarea>
+                        </li>
+                        <li class="submit">
+                            <button type="submit">Send your message</button>
+                        </li>
+                    </ul>
+                </form>
             </div>
-            <div>
+            <div class="test-2">
                 <h4>Testimonial (2)</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora beatae ratione repellendus, voluptates odit temporibus totam deserunt, nihil nemo, dolore sapiente dolor qui ipsa! Voluptatibus sequi aspernatur reiciendis deleniti incidunt?</p>
+                <p>My kids had been begging me to buy them a pet for months when I finally relented. However, I couldn't find what I wanted at ordinary pet shops. Then I found Lucky Whiskers! Their wide selection of animals searching for a new home was the perfect place to find and adopt a new member of our family. - John Watson, Portland</p>
             </div>
         </main>
         <footer>
-            <p>©2021 Lucky Whiskers</p>
+            <p>©2021 Lucky Whiskers WDD130 - Erin Strydom</p>
+            <div class="social">
+                <a href="https://www.instagram.com/?hl=en" target="_blank"><img src="images/instagram.png" alt="Instagram Logo"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook Logo"></a>
+                <a href="https://twitter.com/?lang=en" target="_blank"><img src="images/twitter.png" alt="Twitter Logo"></a>
+                <a href="https://za.pinterest.com/" target="_blank"><img src="images/pinterest.png" alt="Pinterest Logo"></a>
+            </div>
         </footer>
     </div>
 </body>
